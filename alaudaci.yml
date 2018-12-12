@@ -1,0 +1,7 @@
+version: "0.1.0" 
+pre_ci_boot: 
+    image: "172.17.48.159:5000/u14java"
+    tag: "oraclejdk8"
+ci:
+    - pwd
+    - cp -r * $ALAUDACI_DEST_DIR
